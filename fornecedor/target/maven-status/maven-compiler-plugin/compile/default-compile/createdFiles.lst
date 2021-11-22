@@ -1,0 +1,5 @@
+br/com/alura/microservice/fornecedor/service/InfoService.class
+br/com/alura/microservice/fornecedor/model/InfoFornecedor.class
+br/com/alura/microservice/fornecedor/repository/InfoRepository.class
+br/com/alura/microservice/fornecedor/controller/InfoController.class
+br/com/alura/microservice/fornecedor/FornecedorApplication.class

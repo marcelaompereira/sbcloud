@@ -1,0 +1,5 @@
+/home/ice_mpereira/Documents/projetosTeste/sbcloud/fornecedor/src/main/java/br/com/alura/microservice/fornecedor/model/InfoFornecedor.java
+/home/ice_mpereira/Documents/projetosTeste/sbcloud/fornecedor/src/main/java/br/com/alura/microservice/fornecedor/service/InfoService.java
+/home/ice_mpereira/Documents/projetosTeste/sbcloud/fornecedor/src/main/java/br/com/alura/microservice/fornecedor/FornecedorApplication.java
+/home/ice_mpereira/Documents/projetosTeste/sbcloud/fornecedor/src/main/java/br/com/alura/microservice/fornecedor/controller/InfoController.java
+/home/ice_mpereira/Documents/projetosTeste/sbcloud/fornecedor/src/main/java/br/com/alura/microservice/fornecedor/repository/InfoRepository.java
