@@ -3,10 +3,9 @@ server:
   port: 8888
 
 spring:
-  profiles:
-    active: native
   cloud:
     config:
       server:
-        native:
-          search-locations: /home/ice_mpereira/Desktop/Projeto_cloud
+        git:
+          uri: https://github.com/marcelaompereira/microservices-repo
+          search-paths: fornecedor
