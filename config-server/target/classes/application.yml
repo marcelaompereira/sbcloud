@@ -1,3 +1,4 @@
+# files com profile diferente fornecedor-dev, fornecedor-prod
 server:
   port: 8888
 
