@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 public class InfoService {
 
     @Autowired
-    InfoRepository infoRepository;
+    private InfoRepository infoRepository;
 
     public InfoFornecedor getInfoPorEstado(String estado) {
         return infoRepository.findByEstado(estado);

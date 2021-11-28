@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class InfoController {
 
     @Autowired
-    InfoService infoService;
+    private InfoService infoService;
 
     @RequestMapping("/{estado}")
     public InfoFornecedor getInfoPorEstado(@PathVariable String estado) {
