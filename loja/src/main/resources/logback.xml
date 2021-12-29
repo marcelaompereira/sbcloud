@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
+<!-- Spring Sleuth
+TraceId – This is an id that is assigned to a single request, job, or action.
+Something like each unique user initiated web request will have its own traceId.
+SpanId – Tracks a unit of work. Think of a request that consists of multiple steps.
+Each step could have its own spanId and be tracked individually.
+By default, any application flow will start with same TraceId and SpanId.-->
     <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
     <appender name="PAPERTRAIL" class="ch.qos.logback.classic.net.SyslogAppender">
         <syslogHost>logs.papertrailapp.com</syslogHost>
