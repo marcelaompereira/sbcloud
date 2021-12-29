@@ -4,10 +4,7 @@ import br.com.alura.microservice.fornecedor.dto.ItemDoPedidoDTO;
 import br.com.alura.microservice.fornecedor.model.Pedido;
 import br.com.alura.microservice.fornecedor.service.PedidoService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -16,15 +13,15 @@ import java.util.List;
 public class PedidoController {
 
     @Autowired
-    private PedidoService pedidoServer;
+    private PedidoService pedidoService;
 
     @RequestMapping(method = RequestMethod.POST)
-    public Pedido realizaPedido(List<ItemDoPedidoDTO> produtos) {
-        return pedidoServer.realizaPedido(produtos);
+    public Pedido realizaPedido(@RequestBody List<ItemDoPedidoDTO> produtos) {
+        return pedidoService.realizaPedido(produtos);
     }
 
     @RequestMapping("/{id}")
     public Pedido getPedidoPorId(@PathVariable Long id) {
-        return pedidoServer.getPedidoPorId(id);
+        return pedidoService.getPedidoPorId(id);
     }
 }
