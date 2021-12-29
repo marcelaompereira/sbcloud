@@ -1,4 +1,4 @@
-package br.com.alura.microservice.loja.controller.dto;
+package br.com.alura.microservice.loja.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,9 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ItemDaCompraDTO {
+public class InfoFornecedorDTO {
 
-    private long id;
-    private int quantidade;
+    private String endereco;
 
 }
